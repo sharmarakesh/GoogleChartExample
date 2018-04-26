@@ -1,0 +1,21 @@
+<div class="container">
+
+    <div class="row">
+
+        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+
+            <input type="search" name="" [(ngModel)]="userId" id="input${1/(\w+)/\u\1/g}" class="form-control" value="" required="required" title="">
+        </div>
+        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+            <button type="button" (click)="searchUser(userId)" class="btn btn-primary">Search User</button>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+
+<google-chart [data]="timelineChartData"></google-chart>
