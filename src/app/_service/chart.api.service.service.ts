@@ -11,7 +11,8 @@ export class ChartApiServiceService {
 
   constructor(private http: HttpClient) { }
 
-  getById(id: number): Observable<any>{
+  getById(id: number): Observable<any> {
+    console.log('Searched ID is : ', id);
     const apiUrl = './assets/data/user.json';
       // return this.http.get('./src/asstes/data/user.json' + id);
       return this.http.get(apiUrl);
@@ -19,7 +20,7 @@ export class ChartApiServiceService {
     //     return response.json();
     //   })
     // .catch((error: Response) => {
-    //   return Observable.throw('Unable to fetch data');
+    //   return Observable.throw('Unable to fetch data') ;
     // });
   }
 

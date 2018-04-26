@@ -13,7 +13,9 @@ export class ChartComponent implements OnInit {
   private google;
 
  constructor(private chartApiServiceService: ChartApiServiceService, private route: ActivatedRoute) {}
-  searchUser(id: string) {
+
+
+ searchUser(id: string) {
     console.log(+id);
     this.chartApiServiceService.getById(+id).subscribe((data) => {
       console.log(data);
